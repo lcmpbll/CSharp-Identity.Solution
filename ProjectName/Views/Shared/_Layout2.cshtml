@@ -7,12 +7,9 @@
   <link rel="stylesheet" href="~/css/styles.css">
 </head>
 <body>
-  @if(User.Identity.IsAuthenticated)
-  { @await Html.PartialAsync("Header") }
-  else
-  { @await Html.PartialAsync("HeaderAccount") }
+  @await Html.PartialAsync("HeaderLogin")
   <div class="container">
-  @RenderBody()
+    @RenderBody()
   </div>
   <hr />
 </body>

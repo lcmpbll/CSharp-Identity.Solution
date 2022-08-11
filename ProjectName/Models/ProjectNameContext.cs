@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace ProjectName.Models
 {
-  public class ProjectNameContext : DbContext
+  public class ProjectNameContext : IdentityDbContext
   {
     public DbSet<CLassOne> ClassOne { get; set; }
     public DbSet<ClassTwo> ClassTwo { get; set; }

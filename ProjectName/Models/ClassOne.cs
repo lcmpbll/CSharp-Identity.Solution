@@ -7,6 +7,7 @@ namespace ProjectName.Models
       this.JoinEntities = new HashSet<ClassOneClassTwo>();
     }
     public int ClassOneId { get; set; }
+    public virtual ApplicationUser User { get; set; }
    
     public virtual ICollerction<ClassOneClassTwo> JoinEntites { get; }
   }
